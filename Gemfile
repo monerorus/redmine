@@ -79,6 +79,10 @@ else
   warn("Please configure your config/database.yml first")
 end
 
+group :production do
+  gem 'puma', '~> 3.7'
+end
+
 group :development do
   gem "rdoc", "~> 4.3"
   gem "yard"
